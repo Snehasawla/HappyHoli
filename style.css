@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+
+h1{
+    text-align: center;
+    margin-top: 250px;
+    font-family: "Tangerine";
+    font-size: 100px;
+    z-index: 2;
+    color: white;
+    
+}
+
+body{
+    background: repeating-linear-gradient(45deg, cyan 15px, yellow 40px, white 20px, red 5px);
+}
+
+.colr {
+    position: absolute;
+    margin-left: 1000px;
+    z-index: -1;
+    bottom: 0;
+    text-align: center;
+    box-shadow: 100px 100px green ;
+    filter: blur(5px);
+    height: 0em;
+    font-size: 400px;
+    color: darkblue;
+    border-radius: 50%;
+    animation: animte 5s linear infinite;
+}
+
+@keyframes animte{
+
+    0%{
+        bottom: 250px;
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: 0.1;
+        bottom: 500px;
+        transform: scale(1.5);
+    }
+
+    100% {
+        bottom: 1000px; 
+        transform: scale(2);
+        opacity: 1;
+
+    }
+}
